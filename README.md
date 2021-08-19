@@ -93,9 +93,10 @@ Option|  Option  |Destination|Description
 
     
 **Running find_all_possible_drug_networks.py**
+
 This script designed as a case study which runs Forest module of Omics Integrator.
-It includes several variables such as paths to the prize and edge files, parameters needed by Forest, outpaths etc.
-These variables within the script should be updated accordingly.
+
+It includes several variables such as paths to the prize and edge files, parameters needed by Forest, outpaths etc. These variables within the script should be updated accordingly.
 
 
 
