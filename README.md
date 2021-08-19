@@ -10,6 +10,9 @@ All data included in P100 dataset is provided in "./raw_data/" folder.
 
 The protocol of network modeling is as below:
 ---------------------------------------------
+
+Some of the scripts require python module of [cmapPy](https://pypi.org/project/cmapPy/)
+
 **1.** prepare_raw_data_files.py
 
 **2.** prepare_seed_protein_list.py
