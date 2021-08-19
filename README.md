@@ -29,70 +29,73 @@ If only landmark genes are chosen, all files will be prepared for 978 landmark g
 
 **Options:**
 
--h, --help  show this help message and exit
+-h, --help
+	show this help message and exit
 
--c, --cell			cellline
-(Required) Cell line of interest. Choices: "A375","A549","MCF7","PC3","YAPC","NPC".
+-c, --cell
+	cellline
+	(Required) Cell line of interest. Choices: "A375","A549","MCF7","PC3","YAPC","NPC".
 
--p, --pval			pvalThreshold
-p-value threshold that is desired to get the significant conditions (Default is 0.05)
+-p, --pval
+	pvalThreshold
+	p-value threshold that is desired to get the significant conditions (Default is 0.05)
 
--L, --L1000			l1000File
+-L, --L1000
+	l1000File
+	Path to the raw L1000 data file
+	Default = "./raw_data/GSE101406_Broad_LINCS_L1000_Level3_INF_mlr12k_n1667x12328.gctx"
 
-						Path to the raw L1000 data file
-						Default = "./raw_data/GSE101406_Broad_LINCS_L1000_Level3_INF_mlr12k_n1667x12328.gctx"
+-P, --P100
+	P100File
+	Path to the raw P100 data file
+	Default = "./raw_data/GSE101406_Broad_LINCS_L1000_Level3_INF_mlr12k_n1667x12328.gctx"
 
--P, --P100			P100File
+-ci, --cellinfo
+	cellFile
+	Path to the cell info file
+	Default = "./raw_data/GSE101406_Broad_LINCS_cell_info.txt"
 
-						Path to the raw P100 data file
-						Default = "./raw_data/GSE101406_Broad_LINCS_L1000_Level3_INF_mlr12k_n1667x12328.gctx"
+-pt, --pert
+	pertFile
+	Path to the perturbant info file
+	Default = "./raw_data/GSE101406_Broad_LINCS_pert_info.txt"
 
--ci, --cellinfo		cellFile
+-lg, --Lgene
+	LgeneFile
+	Path to the L1000 gene info file
+	Default = "./raw_data/GSE101406_Broad_LINCS_L1000_gene_info.txt"
 
-						Path to the cell info file
-						Default = "./raw_data/GSE101406_Broad_LINCS_cell_info.txt"
+-la, --Lanalyte
+	LanalyteFile
+	Path to the L1000 analyte info file
+	Default = "./raw_data/GSE101406_Broad_LINCS_L1000_inst_info.txt"
 
--pt, --pert			pertFile
+-pi, --PinstFile
+	PinstFile
+	Path to the P100 instrument info file
+	Default = "./raw_data/GSE101406_Broad_LINCS_P100_inst_info.txt"
 
-						Path to the perturbant info file
-						Default = "./raw_data/GSE101406_Broad_LINCS_pert_info.txt"
+-pa, --Panalyte
+	PanalyteFile
+	Path to the P100 analyte info file
+	Default = "./raw_data/GSE101406_Broad_LINCS_P100_analyte_info.txt"
 
--lg, --Lgene			LgeneFile
+-lm, --lmGenes
+	lmGenesFile
+	Path to the L1000 Landmark genes file
+	Default = "./raw_data/landmark_genes_978.txt"
 
-						Path to the L1000 gene info file
-						Default = "./raw_data/GSE101406_Broad_LINCS_L1000_gene_info.txt"
+--iflandmark
+	iflandmark
+	True or False to select which genes will be used in transcriptomic data (L1000).
+	If True, only landmark genes will be used in the analysis. Landmark genes are
+	listed in the file whose path can be given with --lmGenesoption.
+	Default = False
 
--la, --Lanalyte		LanalyteFile
-
-						Path to the L1000 analyte info file
-						Default = "./raw_data/GSE101406_Broad_LINCS_L1000_inst_info.txt"
-
--pi, --PinstFile		PinstFile
-
-						Path to the P100 instrument info file
-						Default = "./raw_data/GSE101406_Broad_LINCS_P100_inst_info.txt"
-
--pa, --Panalyte		PanalyteFile
-
-						Path to the P100 analyte info file
-						Default = "./raw_data/GSE101406_Broad_LINCS_P100_analyte_info.txt"
-
--lm, --lmGenes		lmGenesFile
-
-						Path to the L1000 Landmark genes file
-						Default = "./raw_data/landmark_genes_978.txt"
-
---iflandmark			iflandmark
-
-						True or False to select which genes will be used in transcriptomic data (L1000).
-						If True, only landmark genes will be used in the analysis. Landmark genes are
-                        listed in the file whose path can be given with --lmGenesoption.
-						Default = False
-
---outpath   outpath
-
-            Path to the directory which will hold the output files
-						Default = "./raw_data/"
+--outpath
+	outpath
+	Path to the directory which will hold the output files
+	Default = "./raw_data/"
 
 **Running prepare_seed_protein_list.py**
 Given the drugname, cell line name of interest and pvalues for L1000 and P100 data, this script finds out seed protein list including transcriptomic, phosphoproteomic and drug targetome data; then calculates corresponding prize values and 
