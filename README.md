@@ -21,6 +21,11 @@ Some of the scripts require python module of [cmapPy](https://pypi.org/project/c
 
 **4.** find_all_possible_drug_networks.py
 
+* **For parameter tuning purposes, [forest-tuner repository](https://github.com/gungorbudak/forest-tuner) can be used.**
+* **For separation score calculation, method described in [Menche et.al.,2015](https://pubmed.ncbi.nlm.nih.gov/25700523/) is used.**
+
+
+
 **Running prepare_raw_data_files.py**
 
 <p>Find significantly perturbed genes and/or phosphoproteins and create the files:</p>
