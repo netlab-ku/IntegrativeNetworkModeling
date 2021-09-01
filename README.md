@@ -37,6 +37,7 @@ Some of the scripts require python module of [cmapPy](https://pypi.org/project/c
 <p>If only landmark genes are chosen, all files will be prepared for 978 landmark genes.</p>
 
 **Options:**
+
 Option|  Option  |Destination|Description
 --|----|----|----
 -h|--help|help|show this help message and exit
@@ -61,6 +62,7 @@ Option|  Option  |Destination|Description
 
 
 **Options:**
+
 Option|  Option  |Destination|Description
 --|----|----|----
 -h|--help|help|show this help message and exit
@@ -85,6 +87,7 @@ Option|  Option  |Destination|Description
 <p>Given the drugname, cell line name of interest, path to the reference interactome paths to the raw L1000 data, gene-inst-pert info files, path to the file including list of landmark genes processes the reference interactome to exclude hub nodes, low-expressed genes, then perfroms link prediction and adds edges passing localization filters. Finally outputs the interactome file as "{cell_line}_{drugname}_iref_processed_interactome.txt". </p>
 
 **Options:**
+
 Option|  Option  |Destination|Description
 --|----|----|----
 -c|--cell|cellline|(Required) Cell line of interest. Choices: "A375","A549","MCF7","PC3","YAPC","NPC".
